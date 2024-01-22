@@ -1,0 +1,21 @@
+.Dd December 5, 2023
+.Dt BLC 1
+.Sh NAME
+.Nm blc
+.Nd Binary Lambda Calculus Virtual Machine
+.Sh SYNOPSIS
+{ cat
+.Ar PROG
+; cat
+.Ar INPUT
+} |
+blc
+.Sh DESCRIPTION
+The Lambda Calculus is a programming language with a single keyword.
+It's the Turing tarpit discovered by Turing's doctoral advisor.
+.Nm
+is an 8-bit binary lambda calculus virtual machine. It reads a single
+lambda expression from standard input when starting up. All remaining
+input bytes are controlled by the program.
+.Sh AUTHORS
+.An "Justine Alexandra Roberts Tunney" Aq jtunney@mozilla.com
