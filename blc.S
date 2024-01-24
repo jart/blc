@@ -359,7 +359,7 @@ Lambd:	getpid
 	jz	Exit
 	xchg	V(envp),NEXT*8(contp)
 	xchg	V(envp),V(contp)
-	jmp	Eval
+	jmp	0b
 
 Apply:	getgid
 	test	V(frep),V(frep)
